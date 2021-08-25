@@ -1,0 +1,142 @@
+.bigFont{
+    font-family: 'Staatliches', cursive !important;
+    font-size: 6rem;
+    padding: 30px;
+    border: 3px dashed rgb(4, 228, 4);
+    border-radius: 20px;
+}
+.dancingFont{
+    font-family: 'Pacifico', cursive !important;
+font-family: 'Staatliches', cursive !important;
+}
+.recipeHome{
+    background-image: url("../spice-herbs-and-vegetables-frame-food-background-and-empty-cutting-GD8P2E.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.navbar{
+    background-color: black;
+    z-index: 2;
+}
+.nav-link{
+    color: white!important;
+    font-size: 17px;
+    transition: color 1s;
+}
+
+.nav-link:hover{
+    color: #20c997!important;
+ }
+
+ .recipeDetails{
+    background-color:blanchedalmond !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+ }
+.recipeCategories{
+    margin: 30px;
+    
+}
+ .recipeCategories p{
+max-width: 700px;
+margin:auto;
+font-weight: 500 !important ;
+    background-color: antiquewhite;
+    
+
+ }
+ .recipeCategories h2{
+    font-size: 50px;
+    margin:auto;
+    font-weight: 500 !important ;
+     }
+.recipeHeaders h3{
+    
+    background-color: antiquewhite;
+}
+
+.mealDiv img{
+    height: 300px;
+}
+
+.mealDiv:hover{
+    cursor: pointer;
+}
+     /**********mediaQuery *****************************************************/
+@media screen and (max-width:576px) {
+    .bigFont{
+        font-size: 3rem;
+        padding: 15px;  
+    }
+
+    .mealDiv img{
+        height: 200px;
+    }
+
+    .recipeHeaders h3{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:577px)  {
+    .bigFont{
+        font-size: 4rem;
+        padding: 20px;
+        border: 3px dashed rgb(4, 228, 4);
+        border-radius: 20px;
+    }
+
+    .mealDiv img{
+        height: 300px;
+    }
+
+    .recipeHeaders h3{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:992px) and (min-width:769px)  {
+    .bigFont{
+        font-size: 5rem;
+        padding: 25px;
+ 
+    }
+
+    .mealDiv img{
+        height: 100px;
+    }
+
+    .recipeHeaders h3{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:1200px)and (min-width:993px)  {
+    .bigFont{
+        font-size: 5.5rem;
+    }
+
+
+    .mealDiv img{
+        height: 250px;
+    }
+
+    .recipeHeaders h3{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:1400px)and (min-width:1201px)  {
+    .bigFont{
+        font-size: 6rem;
+    
+    }
+    
+}

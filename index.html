@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font Weight -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header class="recipeHome vh-100 position-relative">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-dark p-2 position-fixed top-0 w-100">
+            <div class="container-fluid">
+                <h2>
+                    <a class="navbar-brand fs-2 text-white fw-bolder dancingFont" href="#">Spcica</a>
+                </h2>
+                <button class="navbar-toggler bg-white text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  mb-2 mb-lg-0 ">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <div class="line   w-100 d-lg-none my-2"></div>
+                        <li class="nav-item me-3">
+                            <a class="nav-link " aria-current="page" href="#">About</a>
+                        </li>
+                        <div class="line   w-100 d-lg-none my-2"></div>
+
+                        <li class="nav-item me-3">
+                            <a class="nav-link " aria-current="page" href="#">What to Eat</a>
+                        </li>
+                        <div class="line   w-100 d-lg-none my-2"></div>
+
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="recipeHeader h-100 d-flex justify-content-center align-items-center text-danger">
+            <h1 class="bigFont "> Never Miss A Recipe</h1>
+        </div>
+
+        <div class="swimmingSearch position-absolute w-100  p-5 bg-white top-100 start-50 translate-middle">
+            <div class="container">
+                <!-- <div class="search text-center d-flex ">
+
+    <input type="text" class="form-control m-auto  w-50" placeholder="Search for a meal"> 
+       <button class="btn btn-primary ">Search </button>
+</div> -->
+
+                <div class="input-group w-75 m-auto ">
+
+                    <input id="serachInput" type="text" class="form-control" placeholder="Search for a Meal"
+                        aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    <button class="input-group-text btn btn-outline-primary fw-bold " id="searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="recipeDetails p-5 bg">
+
+        <div class="recipeCategories p-4 text-center ">
+            <h2 class="dancingFont"> Recipe Categories</h2>
+            <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta asperiores hic maiores
+                distinctio quo quae a
+                inventore mollitia molestiae repudiandae.</p>
+        </div>
+        <div class="recipeHeaders d-flex justify-content-around text-dark ">
+            <h3>Meal Type</h3>
+            <h3>Diet & Health</h3>
+            <h3>Ingrediant</h3>
+            <h3>Dish Type</h3>
+        </div>
+        <div class="container-fluid">
+            <div id="mealsContainer" class="row">
+                <div class="col-md-8">
+                    <div class="row " id="meals">
+                     
+                      
+                       
+                    </div>
+                </div>
+                <div id="mealDesc" class="col-md-4">
+                    <!-- <div class="py-3 ">
+                        <h2 class="py-1"> meal Nsme</h2>
+                        <img src="spice-herbs-and-vegetables-frame-food-background-and-empty-cutting-GD8P2E.jpg " class="w-100" alt="">
+                   
+                        <ul class=" dancingFont"> <h5>  Ingrediants</h5>
+                             <li class="py-1"> suger</li>
+                            
+                            <li>Staatliches</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            
+                            <li>Lorem ipsum dolor sit amet.</li></ul>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
