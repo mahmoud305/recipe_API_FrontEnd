@@ -3,20 +3,33 @@ let searchInput = document.getElementById("serachInput");
 let searchBtn = document.getElementById("searchBtn");
 let mealDiv= document.getElementById("mealDiv");
 let mealDesc= document.getElementById("mealDesc");
-
+let mealsButtons=document.querySelectorAll(".recipeButton");
 let allMeals = [];
 let mealDetails={};
+// alert("hello");
+// console.log(mealsButtons.length);
+// for(let i=0;i<mealsButtons.length;i++){
+//     console.log(mealsButtons[i]);
+// }
+
+for(let i=0;i<mealsButtons.length;i++){
+    mealsButtons[i].addEventListener("click", function(){
+        // alert(this.innerHTML)
+        $(this).siblings().removeClass("active");
+        this.classList.add("active");
+        getRecipes(this.innerHTML);
+    });
+}
 
 
-
-
-async function getRecipes(MealTerm = "pizza") {
+async function getRecipes(MealTerm = "salad") {
     let apiResponse = await fetch(`https://forkify-api.herokuapp.com/api/search?q=${MealTerm}`);
     allMeals = (await apiResponse.json()).recipes;
     // console.log(allMeals);
     displayMeals();
 }
 
+getRecipes();
 
 async function  getMealDetails(mealID){
     console.log(mealID);
@@ -59,12 +72,12 @@ function displayMeals() {
     document.getElementById("meals").innerHTML = cartoona;
 }
 
-searchBtn.addEventListener("click", function () {
-     if (searchInput.value == "")
-        getRecipes();
-    else
-        getRecipes(searchInput.value);
-})
+// searchBtn.addEventListener("click", function () {
+//      if (searchInput.value == "")
+//         getRecipes();
+//     else
+//         getRecipes(searchInput.value);
+// })
 
 
 // mealDiv.addEventListener("click",function(e){

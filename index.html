@@ -1,4 +1,10 @@
 <html>
+<!-- 
+    - 3aiz el details bta3t el recipe tb2a fixed fy el nos 
+    - 3aiz 25ly el data btzhr wa7da wa7da msh kolo mra wa7da .
+
+
+ -->
 
 <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -63,12 +69,19 @@
        <button class="btn btn-primary ">Search </button>
 </div> -->
 
-                <div class="input-group w-75 m-auto ">
-
+                <div class="input-group w-75 m-auto text-center">
+                    <h3 class=" m-auto my-3 ">What Dishes do you want to learn today ?</h3>
+                    <!-- 
                     <input id="serachInput" type="text" class="form-control" placeholder="Search for a Meal"
                         aria-label="Input group example" aria-describedby="btnGroupAddon">
-                    <button class="input-group-text btn btn-outline-primary fw-bold " id="searchBtn">Search</button>
+                    <button class="input-group-text btn btn-outline-primary fw-bold " id="searchBtn">Search</button> -->
+                 <div class=" d-flex justify-content-around w-100 py-4"> 
+                    <button class="  recipeButton input-group-text btn btn-outline-primary active fw-bold rounded-pill border-5 px-lg-5 px-sm-4   py-lg-3  fs-3 " >Salad</button>
+                    <button class=" recipeButton input-group-text btn btn-outline-primary fw-bold rounded-pill border-5 px-lg-5 px-sm-4  py-lg-3  fs-3 " >Pizza</button>
+                    <button class=" recipeButton input-group-text btn btn-outline-primary fw-bold rounded-pill border-5 px-lg-5 px-sm-4  py-lg-3  fs-3 " >Pasta</button>
+                    <button class=" recipeButton input-group-text btn btn-outline-primary fw-bold rounded-pill border-5 px-lg-5 px-sm-4  py-lg-3  fs-3 " >Beef</button>
                 </div>
+             </div>
             </div>
         </div>
     </header>
@@ -82,7 +95,7 @@
                 distinctio quo quae a
                 inventore mollitia molestiae repudiandae.</p>
         </div>
-        <div class="recipeHeaders d-flex justify-content-around text-dark ">
+        <div class="recipeHeaders d-flex justify-content-around text-dark my-4 ">
             <h3>Meal Type</h3>
             <h3>Diet & Health</h3>
             <h3>Ingrediant</h3>
@@ -92,9 +105,9 @@
             <div id="mealsContainer" class="row">
                 <div class="col-md-8">
                     <div class="row " id="meals">
-                     
-                      
-                       
+
+
+
                     </div>
                 </div>
                 <div id="mealDesc" class="col-md-4">
@@ -115,7 +128,7 @@
             </div>
         </div>
     </section>
- 
+<script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

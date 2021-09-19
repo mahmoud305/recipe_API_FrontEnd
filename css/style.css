@@ -80,6 +80,11 @@ font-weight: 500 !important ;
     .recipeHeaders h3{
         font-size: 16px;
     }
+    .recipeButton{
+        font-size: 18px !important;
+        border-width: 2px !important;
+        margin: 0px 5px;
+    }
 }
 
 @media screen and (max-width:768px) and (min-width:577px)  {
@@ -96,6 +101,11 @@ font-weight: 500 !important ;
 
     .recipeHeaders h3{
         font-size: 18px;
+    }
+    .recipeButton{
+        font-size: 18px !important;
+        border-width: 3px !important;
+        margin: 0px 10px;
     }
 }
 
@@ -129,6 +139,10 @@ font-weight: 500 !important ;
 
     .recipeHeaders h3{
         font-size: 20px;
+    }
+    .recipeButton{
+     
+        margin: 0px 10px;
     }
 }
 
